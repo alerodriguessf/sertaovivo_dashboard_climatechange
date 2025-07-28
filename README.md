@@ -20,38 +20,38 @@ The core of this project was the development of a weighted scoring model based o
 
 ## **Business Context & Strategic Objective**
 
-[cite_start]The "Sertão Vivo" project, funded by BNDES, was established to enhance climate resilience for rural communities in Brazil's semi-arid Northeast, a region historically affected by severe droughts and climate-related challenges[cite: 33, 111]. With a significant grant to be distributed, the key challenge was to move beyond subjective decision-making and implement an equitable, evidence-based methodology for resource allocation.
+The "Sertão Vivo" project, funded by BNDES, was established to enhance climate resilience for rural communities in Brazil's semi-arid Northeast, a region historically affected by severe droughts and climate-related challenges. With a significant grant to be distributed, the key challenge was to move beyond subjective decision-making and implement an equitable, evidence-based methodology for resource allocation.
 
-The primary objective was to answer the critical question: **Which municipalities should be prioritized to receive investments to maximize the social and environmental impact of the grant?**
+The primary objective was to answer the critical question: **Which municipalities should be prioritized to receive investments, thereby maximizing the social and environmental impact of the grant?
 
 This project directly addresses this challenge by creating a quantitative, transparent, and replicable system for ranking and selecting municipalities.
 
 ## **Methodology: The Prioritization Index**
 
-A composite index was engineered to produce a final prioritization score for each municipality. [cite_start]The methodology, based on the official BNDES framework, involved a weighted combination of four key classificatory criteria[cite: 40].
+A composite index was engineered to produce a final prioritization score for each municipality. The methodology, based on the official BNDES framework, involved a weighted combination of four key classificatory criteria.
 
 ### 1. Index Components & Scoring
 Each municipality was scored on a scale of 0 to 4 for the following indicators:
 
-* **Rural Poverty Incidence (IPR)**: Based on the percentage of rural households registered in Brazil's Unified Registry for Social Programs (CadÚnico) within poverty and extreme poverty brackets. [cite_start]A higher poverty rate results in a higher score[cite: 53, 54, 55].
-* **Climate Vulnerability & Drought History (IVCS)**: Utilizes a climate vulnerability index ranging from "Very Low" to "Very High." [cite_start]Greater vulnerability corresponds to a higher score[cite: 61, 62, 63].
-* **Food & Nutritional Security (ISAN)**: Measures the population's vulnerability to food insecurity. [cite_start]A higher vulnerability level (e.g., "Very High") receives a higher score[cite: 66, 74].
-* **Water Security Index (ISH)**: Assesses the availability and quality of water resources. [cite_start]Lower water security (rated from "Maximum" to "Minimum") results in a higher score, indicating greater need[cite: 76, 78].
+* **Rural Poverty Incidence (IPR)**: Based on the percentage of rural households registered in Brazil's Unified Registry for Social Programs (CadÚnico) within poverty and extreme poverty brackets. A higher poverty rate results in a higher score.
+* **Climate Vulnerability & Drought History (IVCS)**: Utilizes a climate vulnerability index ranging from "Very Low" to "Very High." Greater vulnerability corresponds to a higher score.
+* **Food & Nutritional Security (ISAN)**: Measures the population's vulnerability to food insecurity. A higher vulnerability level (e.g., "Very High") receives a higher score.
+* **Water Security Index (ISH)**: Assesses the availability and quality of water resources. Lower water security (rated from "Maximum" to "Minimum") results in a higher score, indicating greater need.
 
 ### 2. Weighting & Final Score Calculation
-To align with the project's primary goal of addressing socioeconomic disparities, the criteria were assigned different weights. [cite_start]The Rural Poverty Incidence was given the highest importance[cite: 81, 82].
+To align with the project's primary goal of addressing socioeconomic disparities, the criteria were assigned different weights. The Rural Poverty Incidence was given the highest importance.
 
 * **Weights Applied**:
-    * [cite_start]Rural Poverty (P1): **4** [cite: 86]
-    * [cite_start]Climate Vulnerability (P2): **2** [cite: 86]
-    * [cite_start]Food Security (P3): **2** [cite: 86]
-    * [cite_start]Water Security (P4): **1** [cite: 86]
+    * Rural Poverty (P1): **4** 
+    * Climate Vulnerability (P2): **2** 
+    * Food Security (P3): **2** 
+    * Water Security (P4): **1** 
 
 The final score for each municipality was calculated using the following weighted formula:
-[cite_start]**Municipality Score = (4 × IPR) + (2 × IVCS) + (2 × ISAN) + (1 × ISH)** [cite: 89]
+**Municipality Score = (4 × IPR) + (2 × IVCS) + (2 × ISAN) + (1 × ISH)**
 
 ### 3. Statistical Prioritization Tiers
-[cite_start]The calculated scores for all municipalities formed an approximately normal distribution[cite: 90]. [cite_start]This statistical property was leveraged to classify municipalities into four distinct priority tiers based on standard deviations from the mean (μ), ensuring a robust and statistically sound categorization[cite: 91, 100].
+The calculated scores for all municipalities formed an approximately normal distribution. This statistical property was leveraged to classify municipalities into four distinct priority tiers based on standard deviations from the mean (μ), ensuring a robust and statistically sound categorization.
 * **Very High Priority**: Score > (μ + 1σ)
 * **High Priority**: Score between μ and (μ + 1σ)
 * **Medium Priority**: Score between (μ - 1σ) and μ
@@ -64,8 +64,8 @@ The calculated index and prioritization tiers were operationalized through the d
 **Key Dashboard Features**:
 * **Geospatial Visualization**: A map of Pernambuco's semi-arid region color-coded by the final priority tier, allowing for quick identification of critical zones.
 * **Dynamic Filtering**: Users can filter municipalities by state, priority level, or individual index scores (e.g., show only municipalities with "Very High" climate vulnerability).
-* **Detailed Drill-Down**: Selecting a municipality reveals its individual scores for each of the four criteria, providing a complete diagnostic view and justifying its final ranking.
-* [cite_start]**Strategic Simulation**: The dashboard allows for simulating investment scenarios, calculating the overall impact score of a proposed project based on the number of families served in selected municipalities, using the official state-level scoring formula[cite: 103, 104].
+* **Detailed Drill-Down**: Selecting a municipality reveals its scores for each of the four criteria, providing a complete diagnostic view and justifying its final ranking.
+* **Strategic Simulation**: The dashboard allows for simulating investment scenarios, calculating the overall impact score of a proposed project based on the number of families served in selected municipalities, using the official state-level scoring formula.
 
 ## **Impact & Business Value**
 
@@ -83,7 +83,7 @@ The calculated index and prioritization tiers were operationalized through the d
 
 The analysis was conducted using official, publicly available data from Brazilian government institutions, ensuring credibility and accuracy.
 
-* [cite_start]**CadÚnico**: Brazilian Unified Registry for Social Programs [cite: 44]
-* [cite_start]**AdaptaBrasil/MCTI**: Ministry of Science, Technology, and Innovation platform for climate vulnerability data [cite: 70]
-* [cite_start]**SISVAN/Ministry of Citizenship**: National Food and Nutrition Surveillance System [cite: 47]
-* [cite_start]**ANA (National Water and Sanitation Agency)**: Data on water availability and quality [cite: 49]
+* **CadÚnico**: Brazilian Unified Registry for Social Programs 
+* **AdaptaBrasil/MCTI**: Ministry of Science, Technology, and Innovation platform for climate vulnerability data
+* **SISVAN/Ministry of Citizenship**: National Food and Nutrition Surveillance System 
+* **ANA (National Water and Sanitation Agency)**: Data on water availability and quality
