@@ -3,7 +3,7 @@
 
 ## **Executive Summary**
 
-This project presents the design and implementation of a multi-criteria prioritization index and an interactive Power BI dashboard to guide the strategic allocation of a USD 60 million climate adaptation grant from the Brazilian Development Bank (BNDES). Tasked by the Special Advisory Office, this initiative aimed to create a data-driven framework to identify municipalities most vulnerable to climate change in Brazil's semi-arid region.
+This project presents the design and implementation of a multi-criteria prioritization index and an interactive Power BI dashboard to guide the strategic allocation of a USD 60 million climate adaptation grant from the Brazilian Development Bank (BNDES). Tasked by the Special Advisory Office, this initiative aimed to create a data-driven framework to identify municipalities most vulnerable to climate change in Pernambuco's semi-arid region.
 
 The core of this project was the development of a weighted scoring model based on official governmental data sources, incorporating socioeconomic vulnerability, climate risk, and food and water security indicators. The final deliverable—an interactive Power BI dashboard—translates this complex index into an intuitive decision-making tool, enabling policymakers to allocate infrastructure investments for water resilience with maximum impact and transparency.
 
@@ -58,12 +58,13 @@ The calculated scores for all municipalities formed an approximately normal dist
 * **Low Priority**: Score < (μ - 1σ)
 
 ## **Dashboard & Data Visualization**
+<img width="935" height="487" alt="fida " src="https://github.com/user-attachments/assets/a8c191b6-59e3-43bc-ade2-311f1f731213" />
 
 The calculated index and prioritization tiers were operationalized through the development of an interactive Power BI dashboard. This business intelligence tool was designed for strategic advisors and policymakers.
 
 **Key Dashboard Features**:
 * **Geospatial Visualization**: A map of Pernambuco's semi-arid region color-coded by the final priority tier, allowing for quick identification of critical zones.
-* **Dynamic Filtering**: Users can filter municipalities by state, priority level, or individual index scores (e.g., show only municipalities with "Very High" climate vulnerability).
+* **Dynamic Filtering**: Users can filter municipalities, priority level, or individual index scores (e.g., show only municipalities with "Very High" climate vulnerability).
 * **Detailed Drill-Down**: Selecting a municipality reveals its scores for each of the four criteria, providing a complete diagnostic view and justifying its final ranking.
 * **Strategic Simulation**: The dashboard allows for simulating investment scenarios, calculating the overall impact score of a proposed project based on the number of families served in selected municipalities, using the official state-level scoring formula.
 
